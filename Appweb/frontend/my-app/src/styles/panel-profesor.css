@@ -1,0 +1,94 @@
+.panel-profesor {
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.panel-profesor h2 {
+  margin-bottom: 1.2rem;
+  font-size: 1.4rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.error-clases,
+.vacio-clases {
+  font-size: 1rem;
+  color: #b60000;
+  background: #fff6f6;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #e3a5a5;
+  max-width: 400px;
+}
+
+.clases-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.clase-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.clase-card:hover {
+  transform: translateY(-3px);
+}
+
+.clase-header {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.clase-icono {
+  font-size: 1.6rem;
+  color: #0077cc;
+}
+
+.clase-header h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #1a1a1a;
+}
+
+.clase-codigo {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.clase-detalles p {
+  margin: 0.3rem 0;
+  font-size: 0.95rem;
+  color: #444;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* ✅ Tabla formal de alumnos */
+.tabla-alumnos {
+  width: 100%;
+  margin-top: 0.5rem;
+  border-collapse: collapse;
+}
+
+.tabla-alumnos td {
+  padding: 0.4rem 0.6rem;
+  font-size: 0.95rem;
+  color: #2c2c2c;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.tabla-alumnos tr:nth-child(even) {
+  background-color: #f4f8fc;
+}

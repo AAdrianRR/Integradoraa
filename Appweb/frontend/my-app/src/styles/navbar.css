@@ -1,0 +1,143 @@
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(16px);
+  background: linear-gradient(90deg,
+    #0077cce3,
+    lch(39.08% 80.98 39.07 / 0.808),
+    hsl(37, 92%, 46%)
+  );
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+.navbar-logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.navbar-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-content {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.navbar-menu {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.navbar-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.navbar-links a,
+.navbar-links button,
+.cerrar-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: none;
+  border: none;
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.4rem 0.8rem;
+  text-decoration: none;
+  min-height: 40px;
+  line-height: 1.4;
+  transition: color 0.25s ease;
+  white-space: nowrap;
+}
+
+.navbar-links a:hover,
+.navbar-links button:hover,
+.cerrar-btn:hover {
+  color: #ffe600;
+}
+
+.navbar-links svg,
+.cerrar-btn svg {
+  font-size: 1.1rem;
+  color: white;
+}
+
+.dropdown button::after {
+  content: " ▾";
+  font-size: 0.8rem;
+  padding-left: 0.2rem;
+}
+
+.submenu {
+  position: absolute;
+  top: 2.8rem;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  min-width: 160px;
+  padding: 0.6rem 0.8rem;
+  border-radius: 6px;
+  backdrop-filter: blur(12px);
+  background: linear-gradient(90deg,
+    #0077cce3,
+    lch(39.08% 80.98 39.07 / 0.808),
+    hsl(37, 92%, 46%)
+  );
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+}
+
+.submenu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.submenu a:hover {
+  color: #ffe600;
+}
+
+.navbar-sesion {
+  display: flex;
+  align-items: center;
+}
+.ajustar-btn {
+  padding: 0.6rem 1rem;
+  max-width: 180px;
+  margin: 0 auto;
+  display: block;
+}
